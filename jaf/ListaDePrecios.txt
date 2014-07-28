@@ -1,0 +1,4 @@
+1.0,Lapiz     ,13.0
+2.0,Goma      ,06.5
+3.0,Lapicera  ,19.5
+4.0,Sacapuntas,10.4
