@@ -34,9 +34,9 @@ public class JAFileImpl<T> implements JAFile<T> {
         while((actualLine = reader.readLine()) != null){
             this.fileDataset.add(actualLine);
         }
+        this.fileWrapper = unaClase;
         reader.close();
         fr.close();
-
     }
 
     @Override

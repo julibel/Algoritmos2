@@ -22,13 +22,7 @@ public class Utils {
 
         int pos = 0;
 
-        for(int i = 0; i < record.getClass().getDeclaredFields().length; i++) {
-            Field field = record.getClass().getDeclaredFields()[i];
-
-
-
-        }
-
+     
         for (Field field : record.getClass().getDeclaredFields()) {
 
             Class type = field.getType();

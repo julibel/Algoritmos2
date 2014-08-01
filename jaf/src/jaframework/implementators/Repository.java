@@ -43,8 +43,17 @@ public class Repository implements JASession{
 
     @Override
     public <T> JAIndex<T> getIndexByAlias(JAFile<T> jafile, String indexAlias) {
-        //return new OrderBy<T>(jaFile, indexAlias);
-        return null;
+        try
+		{
+			return new JAIndexImpl<T>(
+						(Class<T>) this.byAlias.get(jafile.getAlias()),
+						indexAlias
+					);
+		}
+		catch(IOException ex)
+		{
+			throw new RuntimeException("OH NO!!!");
+		}
     }
 
     public void register(Class<?> clazz) {
