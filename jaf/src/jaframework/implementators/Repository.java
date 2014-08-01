@@ -36,9 +36,8 @@ public class Repository implements JASession{
         try {
             return new JAFileImpl(byAlias.get(alias));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return null;
     }
 
     @Override
