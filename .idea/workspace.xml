@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05366d60-0d19-4b25-abf1-b922cddf852e" name="Default" comment="Eaeaea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jaf/ALUMNOS.txt" afterPath="$PROJECT_DIR$/jaf/ALUMNOS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jaf/jaf.iml" afterPath="$PROJECT_DIR$/jaf/jaf.iml" />
-    </list>
+    <list default="true" id="05366d60-0d19-4b25-abf1-b922cddf852e" name="Default" comment="Eaeaea" />
     <ignored path="Algoritmos2.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
