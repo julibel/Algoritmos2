@@ -32,7 +32,8 @@ public class Utils {
             if (annotations == null)
                 continue;
 
-            fillField(record, field, campos[pos++].substring(0,annotations.size()));
+            fillField(record, field, campos[pos].substring(0,Math.min(annotations.size(),campos[pos].length())));
+            pos++;
         }
         return true;
     }

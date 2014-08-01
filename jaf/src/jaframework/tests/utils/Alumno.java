@@ -3,13 +3,19 @@ package jaframework.tests.utils;
 import jaframework.def.annotations.Field;
 import jaframework.def.annotations.File;
 import jaframework.def.annotations.Index;
+import jaframework.def.annotations.Indexes;
 
 /**
  * Created by usuario on 15/06/14.
  */
 
 @File(name="ALUMNOS.txt", alias="ALUMNOS")
-@Index(key="legajo", alias="idx")
+@Indexes(
+    value = {
+        @Index(key="nombre", alias="idx"),
+        @Index(key="-nombre", alias="ids")
+    }
+)
 public class Alumno implements Cloneable{
     @Field(size=4)
     private int legajo;
@@ -25,6 +31,14 @@ public class Alumno implements Cloneable{
 
     @Field(size=2)
     private int nota;
+
+
+    public Alumno(){
+    }
+
+    public Alumno(String nombre){
+        this.nombre = nombre;
+    }
 
     @Override
     public String toString()

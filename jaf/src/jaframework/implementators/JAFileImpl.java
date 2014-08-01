@@ -49,6 +49,15 @@ public class JAFileImpl<T> implements JAFile<T> {
         return pos == fileDataset.size();
     }
 
+    /**
+     * 0043,Carla     ,2001/03/21,F,10
+     0023,Amalia    ,1992/10/12,F,06
+     0060,Marisa    ,1990/03/15,F,04
+     0033,Rolando   ,1993/11/01,M,09
+     0053,Osvaldo   ,2005/12/20,M,02
+     * @param record
+     * @return
+     */
     @Override
     public boolean read(T record) {
         if(pos >= fileDataset.size())
