@@ -7,7 +7,7 @@ Realizado para Algoritmos Complejos y Estructuras de Datos Avanzadas - UTN FRBA
 
 ======
 
-Framework to read and management of files
+Framework to read and manage files
 This Collage work was made for the class "Complex Algorithm and Advanced Data Structures"
 The objective was simplify the use of files for students in their first aproach to programing, so that they can focus in learning the topics and abstract from others more complex problems related to this subject.  
 
